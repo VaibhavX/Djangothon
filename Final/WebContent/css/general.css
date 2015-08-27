@@ -1,0 +1,32 @@
+.header{
+	background: transparent linear-gradient(to bottom, #FF8130 0%, #FF6726 100%) repeat scroll 0% 0%;
+box-shadow: 1px 0px 15px #F14F2D;
+margin: 0px;
+padding: 0px;
+border: 0px none;
+outline: 0px none;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+list-style: outside none none;
+display:block;
+}
+
+.header .container {
+    position: relative;
+    height: 48px;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0px auto;
+}
+
+li
+{
+	display:inline-block;
+}
+
+

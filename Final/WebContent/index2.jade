@@ -1,0 +1,52 @@
+.page
+	.users
+
+	script#user-template(type="text/x-handlebars-template")
+		.user
+			.photo
+				img(src="{{photo}}")
+			.info
+				.name {{name}}
+				.nickName {{userName}}
+			dl
+				dt Born
+				dd {{born}}
+				dt DOB
+				dd {{dob}}
+				dt E-mail
+				dd {{email}}
+
+			.funcs
+				.left
+					.icon.status.fa.fa-edit(title="Status")
+					.icon.delete.fa.fa-trash(title="Delete")
+				.right
+					.icon.clone.fa.fa-copy(title="Clone")
+					.icon.send.fa.fa-envelope(title="Send message")
+
+	script#new-user-template(type="text/x-handlebars-template")
+		.user.new
+			.photo
+				.placeHolder
+			.info
+				.name Add new user
+				
+	.editorBox
+		.propertyEditor
+		
+.popup
+	.header
+		.title Send a message
+		.icon
+			i.fa.fa-send(title="Send")
+	.content
+		textarea(placeholder="Your message")
+		
+.instructions
+	ol(type="1")
+		li Select a user
+		li Try to change Name or Nickname property
+		li Press "Send message to user" button and watch the nice popup window
+		li Select an other user too
+		li Try the multiple property edit (e.g. change status)
+		li Watch the "Add new user" button hover effect
